@@ -1,0 +1,34 @@
+<html>
+    <body>
+
+        <p  id="i1"></p>
+
+        <script>
+            class car {
+                constructor (brand) {
+                    this.name=brand;
+                }
+                show() {
+                    return "I have a "+this.name;
+                }
+            }
+
+            class model extends car {
+                constructor (brand, model) {
+                    super(brand);
+                    this.m=model;
+                }
+                view() {
+                    return this.show()+", it is a "+this.m
+                }
+                static disp() {
+                    return "hello";
+                }
+            }
+
+            let o1=new model("Ford","Mustang");
+            document.getElementById("i1").innerHTML=model.disp()+"<br>"+o1.view();
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <body>
+
+        <script>
+            class guitar {
+
+                constructor(brand, type, pickup) {
+                    this.brand=brand;
+                    this.type=type;
+                    this.pickup=pickup;
+                }
+ 
+                static disp() {
+                    return "hello";
+                }
+
+                view () {
+                    return "I have a "+brand+" "+type+"with a "+pickup+" pickup.";
+                }
+            }
+
+            let g1=new guitar("Gibson","Les Paul","single coil");
+            let g2=new guitar("Ibanez","Stratocaster","HSS");
+
+            document.write(guitar.disp()+"<br>"+g1.view());
+            document.write(guitar.disp()+"<br>"+g2.view());
+        </script>
+
+    </body>
+</html>
